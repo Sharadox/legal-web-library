@@ -1,0 +1,12 @@
+# @sharadox/legal-web-library
+
+> What a Portuguese website must show by law, en/pt: complaints book link, consumer dispute notice, company identification. Unstyled text and links.
+
+- complaints-book COMPLAINTS_BOOK { url https://www.livroreclamacoes.pt/, name { en, pt } } (DL 156/2005)
+- complaints-book-link <ComplaintsBookLink locale className? /> (new tab)
+- dispute-resolution DISPUTE_RESOLUTION_CENTERS { algarve: CIMAAL consumoalgarve.pt, national: CNIACC cniacc.pt }, CONSUMER_PORTAL consumidor.gov.pt (Lei 144/2015 art. 18)
+- dispute-notice <DisputeNotice center locale /> text + links (fragment); DISPUTE_NOTICE { lead, more }
+- company-identification <CompanyIdentification company={{ office, number, shareCapital? }} locale /> (fragment with <br>); formatEuros(amount, locale); COMPANY_IDENTIFICATION labels (CSC art. 171)
+- legal-locale/type LegalLocale "en" | "pt", LegalText
+- EU ODR platform closed July 2025: no link needed
+- 0.1.0: first release
