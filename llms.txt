@@ -9,4 +9,4 @@
 - company-identification <CompanyIdentification company={{ office, number, shareCapital? }} locale /> (fragment with <br>); formatEuros(amount, locale); COMPANY_IDENTIFICATION labels (CSC art. 171)
 - legal-locale/type LegalLocale "en" | "pt", LegalText
 - EU ODR platform closed July 2025: no link needed
-- 0.1.0: first release
+- Changes by version: CHANGELOG.md (in the package)
